@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- Indica que el documento utiliza HTML5.
+     Siempre debe ser la primera línea. -->
+<html lang="es">
+  <!-- Comienza el documento HTML.
+El atributo lang indica el idioma de la página.-->
+
+<head>
+<!-- El head contiene información SOBRE la página.
+ No se muestra directamente en el navegador. -->
+  <meta charset="utf-8">
+<!-- Indica que el documento usa codificación UTF-8.
+ Permite mostrar correctamente letras como á, é, í, ó, ú, ñ, etc. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Hace que la página se adapte correctamente a celulares y tablets.
+ Hoy es prácticamente obligatorio en cualquier sitio web. -->
+  <title>Mi Primera Página Web</title>
+<!-- Es el título que aparece en la pestaña del navegador.
+ También es muy importante para Google. -->
+  <link rel="stylesheet" href="css/style.css">
+<!-- Conecta este HTML con el archivo CSS.
+ Todo el diseño visual irá en css/style.css. -->
+  <meta name="description" content="Primera práctica de HTML. DianaUruguay. Aquí comienzo mi recorrido por el desarrollo frontend.">
+<!-- Breve descripción de la página.
+ Google puede utilizarla en los resultados de búsqueda. -->
+  <meta property="og:title" content="">
+<!-- Título que aparecerá cuando alguien comparta la página
+en Facebook, LinkedIn, WhatsApp, etc. -->
+  <meta property="og:type" content="website">
+<!-- Indica el tipo de contenido.
+Normalmente será "website". -->
+  <meta property="og:url" content="">
+  <!-- Dirección web oficial de la página. -->
+  <meta property="og:image" content="">
+  <!-- Imagen que se mostrará al compartir el enlace. -->
+  <meta property="og:image:alt" content="">
+  <!-- Texto alternativo para la imagen anterior.
+       Mejora la accesibilidad. -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- Icono clásico que aparece en la pestaña del navegador. -->
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!-- Versión moderna del icono en formato SVG. -->
+  <link rel="apple-touch-icon" href="icon.png">
+   <!-- Icono que usa iPhone/iPad si el usuario guarda
+       la página en la pantalla de inicio. -->
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Archivo que permite que el sitio funcione como
+       una aplicación instalable (PWA). -->
+  <meta name="theme-color" content="#2563EB">
+   <!-- Color que algunos navegadores usan para la barra superior
+       en dispositivos móviles. -->
+</head>
+
+<body>
+  
+  <h1>¡Bienvenido!</h1>
+  <!-- Encabezado principal de la página -->
+  <!-- Add your site or application content here -->
+  <p> Esta es mi primera página web.
+        ¡Por fin llegué al frontend! Soy Diana, de Uruguay.
+        Profe de Matemáticas y Física con 53 años, 
+        en transición a la tecnología.  Podés conocer mi perfil en:
+    <a href="https://github.com/DianaUruguay">
+        GitHub
+    </a></p>
+  <script src="js/app.js"></script>
+<!-- Carga el archivo JavaScript del proyecto.
+       Ahora mismo probablemente esté vacío, pero ya quedó preparado. -->
+</body>
+
+</html>

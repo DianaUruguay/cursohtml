@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+    Esta línea indica que el documento utiliza HTML5.
+    Siempre debe ser la primera línea del archivo.
+-->
+
+<html lang="es">
+<!--
+    La etiqueta <html> contiene toda la página.
+    El atributo lang="es" indica que el idioma del documento es español.
+-->
+
+<head>
+    <!--
+        La sección <head> guarda información sobre la página.
+        Esta información no se muestra en la pantalla.
+    -->
+
+    <meta charset="UTF-8">
+    <!--
+        Permite utilizar correctamente letras con tilde,
+        la letra ñ y otros caracteres especiales.
+    -->
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 5 Barra de Valizas Texto en HTML</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos vistos en la clase 5: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="DianaUruguay">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+</head>
+
+<body>
+    <!--Todo lo que esté dentro de <body> será visible para el usuario.-->
+
+    <h1>Barra de Valizas</h1>
+    <!--<h1> representa el título principal del documento.
+        Solo debería existir un <h1> por página.-->
+
+    <p><a href="../index.html">👈 Volver atrás</a></p>
+    <hr />
+    <!--Se crea un enlace para regresar a la página principal (index.html).
+    La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    <p>
+        <!--La etiqueta <p> crea un párrafo.
+            Es una de las etiquetas más utilizadas en HTML.-->
+
+        <strong>Barra de Valizas</strong>
+
+        <!--<strong> sirve para destacar un texto importante.
+            Generalmente el navegador lo muestra en negrita.-->
+
+        es un peque&ntilde;o balneario ubicado en el departamento de Rocha,
+        Uruguay.
+
+        <!--&ntilde; es una entidad HTML que representa la letra ñ.
+            También existen entidades para muchos otros caracteres especiales.-->
+
+        Se caracteriza por sus playas, sus dunas de arena y un ambiente
+        tranquilo que atrae visitantes durante todo el año.
+    </p>
+
+    <p>
+        Desde el pueblo es posible caminar hasta
+        <em>Cabo Polonio</em> atravesando la playa.
+
+        <!--<em> significa "énfasis".
+        Habitualmente el navegador lo muestra en cursiva.-->
+        <!-- Se utiliza la entidad &eacute; para mostrar la letra é -->
+        El recorrido ofrece paisajes des&eacute;rticos y permite disfrutar
+        del sonido del mar.
+    </p>
+
+<!--La etiqueta <blockquote> se utiliza para mostrar una cita extensa.
+    El atributo cite guarda la dirección (URL) de donde fue tomada la cita.
+    Ese atributo no se muestra en la página, solo forma parte del código HTML.-->
+
+<blockquote cite="https://turismorocha.gub.uy/destinos/barra-de-valizas">
+    "Pequeña población nacida a orillas del mar, hogar de pescadores
+    artesanales y de turistas amantes de la serenidad."
+</blockquote>
+
+<p>
+<!--La etiqueta <cite> se utiliza para indicar la fuente,
+        el autor o la obra de donde proviene una cita.
+        A diferencia del atributo cite, este contenido sí es visible
+        para el usuario en la página.-->
+    <cite>
+        Turismo Rocha
+        <a href="https://turismorocha.gub.uy/destinos/barra-de-valizas"
+           target="_blank"
+           rel="noopener noreferrer">
+           Barra de Valizas
+        </a>
+    </cite>
+
+</p>
+
+    <p>
+
+        Algunos atractivos de Valizas son:
+
+        <br>
+
+        <!--<br> inserta un salto de línea.
+            No crea un nuevo párrafo, solamente baja a la línea siguiente.-->
+
+        - La playa.<br>
+        - La feria de artesanos.<br>
+        - Las dunas móviles.<br>
+        - El Arroyo Valizas.<br>
+        - La caminata hacia Cabo Polonio.
+
+    </p>
+
+    <h2>Acerca de esta página</h2>
+<!--
+    Se utilizan etiquetas <code> para mostrar ejemplos de código HTML.
+    Los símbolos < y > se representan con las entidades &lt; y &gt;.
+-->
+<p>
+    Esta página fue realizada como ejercicio de HTML. En ella se utilizaron
+    etiquetas como <code>&lt;p&gt;</code>,
+    <code>&lt;blockquote&gt;</code>,
+    <code>&lt;cite&gt;</code>,
+    <code>&lt;strong&gt;</code> y
+    <code>&lt;em&gt;</code> para practicar el marcado de contenido.
+</p>
+
+    <!--
+        Fin del contenido visible de la página.
+    -->
+
+</body>
+
+<!--
+    Cierre del documento HTML.
+-->
+
+</html>

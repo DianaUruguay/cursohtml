@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Indica que el documento utiliza HTML5.
+     Siempre debe ser la primera línea. -->
+<html lang="es">
+  <!-- Comienza el documento HTML.
+El atributo lang indica el idioma de la página.-->
+
+<head>
+<!-- El head contiene información SOBRE la página.
+ No se muestra directamente en el navegador. -->
+  <meta charset="utf-8">
+<!-- Indica que el documento usa codificación UTF-8.
+ Permite mostrar correctamente letras como á, é, í, ó, ú, ñ, etc. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Hace que la página se adapte correctamente a celulares y tablets.
+ Hoy es prácticamente obligatorio en cualquier sitio web. -->
+  <title>Barra de Valizas</title>
+<!-- Es el título que aparece en la pestaña del navegador.
+ También es muy importante para Google. -->
+  <link rel="stylesheet" href="css/style.css">
+<!-- Conecta este HTML con el archivo CSS.
+ Todo el diseño visual irá en css/style.css. -->
+  <meta name="description" content="Mi lugar, Barra de Valizas es un pequeño pueblo costero del departamento de Rocha, Uruguay, conocido por sus playas, dunas y su entorno natural.">
+  <!-- Breve descripción de la página.
+ Google puede utilizarla en los resultados de búsqueda. -->
+  <meta property="og:title" content="">
+<!-- Título que aparecerá cuando alguien comparta la página
+en Facebook, LinkedIn, WhatsApp, etc. -->
+  <meta property="og:type" content="website">
+<!-- Indica el tipo de contenido.
+Normalmente será "website". -->
+  <meta property="og:url" content="">
+  <!-- Dirección web oficial de la página. -->
+  <meta property="og:image" content="">
+  <!-- Imagen que se mostrará al compartir el enlace. -->
+  <meta property="og:image:alt" content="">
+  <!-- Texto alternativo para la imagen anterior.
+       Mejora la accesibilidad. -->
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <!-- Icono clásico que aparece en la pestaña del navegador. -->
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <!-- Versión moderna del icono en formato SVG. -->
+  <link rel="apple-touch-icon" href="icon.png">
+   <!-- Icono que usa iPhone/iPad si el usuario guarda
+       la página en la pantalla de inicio. -->
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Archivo que permite que el sitio funcione como
+       una aplicación instalable (PWA). -->
+  <meta name="theme-color" content="#2563EB">
+   <!-- Color que algunos navegadores usan para la barra superior
+       en dispositivos móviles. -->
+</head>
+
+<body>
+
+  <h1>Barra de Valizas</h1>
+  <!-- Encabezado principal de la página -->
+  <h2>Descubre un camino entre arena, mar y cielo</h2 >
+  <!-- Add your site or application content here -->
+  <hr />
+  <!--lista con viñetas-->
+    <ul>
+        <!-- Abre el enlace en una nueva pestaña.
+        El atributo rel mejora la seguridad y privacidad. -->
+        <li><a href="https://turismorocha.gub.uy/destinos/barra-de-valizas"
+        target="_blank"
+        rel="noopener noreferrer">
+        Sitio oficial de Turismo Rocha
+        </a></li>
+        <li><a href="pages/barradevalizas.html" target="_self">
+        Ven a Barra de Valizas!
+        </a></li>
+        <!--Se crean dos enlaces a documentos PDF.
+        El primero abre el poema en una nueva pestaña utilizando target="_blank".
+        El segundo descarga el mapa utilizando el atributo download.-->
+        <li><a href="../docs/poema_maria_beloso.pdf" target="_blank">
+         Leer el poema de María Beloso
+        </a></li>
+        <li><a href="../docs/mapadevalizas.pdf" download>
+         Descargar el mapa de Barra de Valizas
+        </a></li>
+        <li><a href="#para terminar...">Para terminar...</a></li>
+        <!-- Abre el enlace en una nueva pestaña.
+        El atributo rel mejora la seguridad y privacidad. -->
+    </ul>
+
+<p>
+    Esta página forma parte de mi aprendizaje de HTML y del inicio de mi
+    camino en el desarrollo frontend. Elegí dedicar este proyecto a
+    <strong>Barra de Valizas</strong>, el lugar donde vivo y que considero uno
+    de los rincones hermosos y pintorescos de Uruguay.
+</p>
+<blockquote cite="https://www.portaldevalizas.com.uy/es/barra-de-valizas">
+    "Valizas es paisaje y comunidad. Una comunidad de pescadores artesanales que ofrecen su captura junto al arroyo y artesanos que ofrecen sus productos a base de cuero, fibras naturales, madera, lana, cerámica, en puestos alrededor de la calle principal o en la feria nocturna. En verano, artesanos visitantes exhiben sus creaciones en la plazoleta, sobre mantas, a la luz de las velas y fogatas y al ritmo de los tambores. También es la época de los bares o pubs con músicos visitantes que continúan su “gira” por la feria, la plaza y las calles"
+</blockquote>
+<p>
+    <cite>
+        Fuente:
+        <a href="https://www.portaldevalizas.com.uy/es/barra-de-valizas"
+           target="_blank"
+           rel="noopener noreferrer">
+            Portal de Valizas
+        </a>
+    </cite>
+</p>
+
+
+<p id="para terminar..."></p>
+<h3>Sobre mi</h3>
+<p>
+    Soy Diana, profesora de Matemáticas y Física en transición al desarrollo de
+    software. Si deseas conocer más sobre mí, visita mi
+    <a href="https://github.com/DianaUruguay" target="_blank">
+        GitHub
+    </a>.
+</p>
+  <script src="js/app.js"></script>
+<!-- Carga el archivo JavaScript del proyecto.
+       Ahora mismo probablemente esté vacío, pero ya quedó preparado. -->
+</body>
+
+</html>
