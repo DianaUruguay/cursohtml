@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo complejo de fusión de filas</title>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">👈 Volver atrás
+        </a>
+    </p>
+
+    <hr />
+    <!--Se crea un enlace para regresar a la página principal (index.html).
+    La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    <h1>Ejemplo 9.4</h1>
+    <h2>Fusión de filas.</h2>
+
+    <table border="1"
+           summary="Ejemplo complejo de fusión de filas">
+           <tr>
+                <th>A</th>
+                <th>B</th>
+                <th rowspan="3">C</th>
+                <th>D</th>
+           </tr>
+
+           <tr>
+                <th rowspan="2">E</th>
+                <th>F</th>
+                <th rowspan="3">G</th>    
+           </tr>
+
+           <tr>
+                <th>H</th>
+           </tr>
+
+           <tr>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+           </tr>
+    </table>
+</body>
+</html>
