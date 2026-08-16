@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_estructurado</title>
+</head>
+
+<body>
+    <header>
+    <!--Se crea un enlace para regresar a la página principal (index.html)-->
+    <p>
+        <a href="index.html">👈 Volver atrás, al índice de ejercicios de formularios
+        </a>
+    </p>
+
+    <hr>
+    <!--La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    </header>
+    <main>
+    <h1>Formulario estructurado</h1>
+
+    <form action="" method="get" name="Formulario_estructurado">
+        <!--conjunto de campos de datos personales-->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!--Nombre, con control de tipo texto con 
+            50 char de longitud máxima-->
+            <p>
+                <label for="name">Nombre</label><br>
+                <input type="text" id="name" name="nombre" maxlength="50" required>
+            </p>
+            <!--Apellidos con control de tipo texto y longitud máxima 50 char-->
+            <p>
+                <label for="lastname">Apellidos</label><br>
+                <input type="text" id="lastname" name="lastname" maxlength="50" required>
+            </p>
+            <!--DNI-->
+            <label for="dni">DNI</label><br>
+            <input type="text" id="dni" name="dni" maxlength="9">
+            </p>
+        </fieldset>
+        <!--conjunto de campos de datos de conexión-->
+        <fieldset>
+            <legend>Datos de conexión</legend>
+            <!--Nombre de usuario, con control de tipo texto con 
+            50 char de longitud máxima-->
+            <p>
+                <label for="username">Nombre de usuario</label><br>
+                <input type="text" id="username" name="nombre_usuario" maxlength="50" required>
+            </p>
+            <!--contraseña longitud máxima 50 char-->
+            <p>
+                <label for="password">Contraseña</label><br>
+                <input type="password" id="password" name="contraseña" maxlength="50" required>
+            </p>
+            <!--repite contraseña longitud máxima 50 char-->
+            <p>
+                <label for="confirm-password">Repite tu contraseña</label><br>
+                <input type="password" id="confirm-password" name="confirma-contraseña" maxlength="50" required>
+            </p>
+        </fieldset>
+        <!--botón para el envío-->
+        <p>
+            <button>Enviar</button>  
+        </p>
+    </form>
+    </main>
+</body>
+<hr>
+<footer>
+    © 2026 - DianaUruguay - Ejercicios de HTML
+</footer>
+</html>

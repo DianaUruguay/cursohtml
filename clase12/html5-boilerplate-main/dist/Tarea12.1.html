@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro. Mi web</title>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">👈 Volver atrás, al índice de ejercicios de formularios
+        </a>
+    </p>
+
+    <hr />
+    <!--Se crea un enlace para regresar a la página principal (index.html).
+    La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    <h1>Formulario de registro. Mi web</h1>
+
+    <form action="" method="get" name="formulario_registro_web">
+        <!--Nombre, con control de tipo texto con 50 char de longitud máxima-->
+        <p>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="nombre" maxlength="50" required>
+        </p>
+        
+        <!--Apellidos con control de tipo texto y longitud máxima 50 char-->
+        <p>
+            <label for="lastname">Apellidos</label><br>
+            <input type="text" id="lastname" name="lastname" maxlength="50" required>
+        </p>
+        <!--Sexo con dos opciones excluyentes, hombre o mujer-->
+        <p>
+            Sexo<br>
+            <input type="radio" name="sexo" value="Masculino" id="man">
+            <label for="man">Masculino</label>
+            <input type="radio" name="sexo" value="Femenino" id="woman">
+            <label for="woman">Femenino</label>    
+        </p>
+
+            <!--Correo electrónico con un control de tipo email-->
+        <p>
+            <label for="email">Correo electrónico</label><br>
+            <input type="email" name="email" id="email">   
+        </p>
+
+         <!--Población, una lista desplegable con las opciones Alicante, Madrid,
+        Sevilla y Valencia.-->
+        
+            <label for="city">Población</label><br>
+            <select id="city" name="poblacion">
+                <option value="">-</option>
+                <option value="alicante">Alicante</option>
+                <option value="madrid">Madrid</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia">Valencia</option>
+            </select>
+        
+
+            <!--Descripción, un área de texto multilinea-->
+           <p>
+            <label for="description">Descripción</label><br>
+            <textarea id="description" name="descripcion" rows="5" cols="50" 
+            placeholder="Escribe aquí el contenido de tu consulta"></textarea>
+           </p>
+
+            <!--Casilla de verificación con el texto "Deseo recibir 
+            información sobre novedades y ofertas. Activada por 
+            defecto"-->
+            <p>
+                <input type="checkbox" name="novedades" id="news" checked>   
+                <label for="news">Deseo recibir información sobre novedades y ofertas.</label>
+            </p>
+
+            <!--Casilla de verificación con el texto 
+            "Declaro haber leído y aceptar las condiciones
+            generales del programa y la normativa sobre 
+            protección de datos"-->
+            <p>
+                <input type="checkbox" name="aceptar_condiciones" id="accept-terms" required>
+                <label for="accept-terms">Declaro haber leído y aceptar las condiciones
+                 generales del programa <br>y la normativa sobre protección de datos.</label>
+            </p>
+            
+            <!--botón para el envío-->
+            <p>
+                <button>Enviar</button>  
+            </p>
+    </form>
+</body>
+<hr>
+<footer>
+    © 2026 - DianaUruguay - Ejercicios de HTML
+</footer>
+</html>
