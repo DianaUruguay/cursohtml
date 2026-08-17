@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_rellena_tu_cv</title>
+</head>
+
+<body>
+    <header>
+    <!--Se crea un enlace para regresar a la página principal (index.html)-->
+    <p>
+        <a href="index.html">👈 Volver atrás, al índice de ejercicios de formularios
+        </a>
+    </p>
+
+    <hr>
+    <!--La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    </header>
+    <main>
+    <h1>Rellena tu CV</h1>
+
+    <form action="" method="post" name="Formulario_rellena_tu_cv">
+        <!--conjunto de campos de datos personales-->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!--Selector de provincias españolas-->
+                <label for="province">Provincia</label><br>
+                    <select id="province" name="province" required>
+                        <option value="">Seleccione una provincia</option>
+                        <option value="alava">Álava</option>
+                        <option value="albacete">Albacete</option>
+                        <option value="alicante">Alicante</option>
+                        <option value="almeria">Almería</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="avila">Ávila</option>
+                        <option value="badajoz">Badajoz</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="burgos">Burgos</option>
+                        <option value="caceres">Cáceres</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castellon">Castellón</option>
+                        <option value="ciudad-real">Ciudad Real</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="cuenca">Cuenca</option>
+                        <option value="girona">Girona</option>
+                        <option value="granada">Granada</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="guipuzcoa">Guipúzcoa</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="huesca">Huesca</option>
+                        <option value="illes-balears">Illes Balears</option>
+                        <option value="jaen">Jaén</option>
+                        <option value="la-coruna">La Coruña</option>
+                        <option value="la-rioja">La Rioja</option>
+                        <option value="las-palmas">Las Palmas</option>
+                        <option value="leon">León</option>
+                        <option value="lleida">Lleida</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="ourense">Ourense</option>
+                        <option value="palencia">Palencia</option>
+                        <option value="pontevedra">Pontevedra</option>
+                        <option value="salamanca">Salamanca</option>
+                        <option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
+                        <option value="segovia">Segovia</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="soria">Soria</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="teruel">Teruel</option>
+                        <option value="toledo">Toledo</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="valladolid">Valladolid</option>
+                        <option value="vizcaya">Vizcaya</option>
+                        <option value="zamora">Zamora</option>
+                        <option value="zaragoza">Zaragoza</option>
+                    </select>
+            <!--Selector de fecha de nacimiento-->
+            <p>
+                Fecha de nacimiento<br>
+                <input type="date" id="date" name="nacimiento"  required> 
+            </p>
+            <!--Selector de temas de interés, de opción múltiple-->
+            <p>
+                <label for="intereses">Temas de interés</label><br>
+                <small>Mantén presionada la tecla Ctrl para seleccionar más de una opción.</small><br>
+                <select id="intereses" name="intereses" multiple size="6">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="bases-datos">Bases de datos</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="apis">APIs y servicios web</option>
+                    <option value="git">Git y GitHub</option>
+                    <option value="testing">Testing</option>
+                    <option value="devops">DevOps</option>
+                    <option value="seguridad">Seguridad web</option>
+                </select>
+            </p>
+            
+        </fieldset>
+
+        <!--botón para el envío-->
+        <p>
+            <button>Enviar</button>  
+        </p>
+    </form>
+    </main>
+</body>
+<hr>
+<footer>
+    © 2026 - DianaUruguay - Ejercicios de HTML
+</footer>
+</html>

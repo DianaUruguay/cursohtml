@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_información_sobre_el_producto</title>
+</head>
+
+<body>
+    <header>
+    <!--Se crea un enlace para regresar a la página principal (index.html)-->
+    <p>
+        <a href="index.html">👈 Volver atrás, al índice de ejercicios de formularios
+        </a>
+    </p>
+
+    <hr>
+    <!--La etiqueta <hr> dibuja una línea horizontal que separa visualmente
+    esta sección del resto del contenido.-->
+    </header>
+    <main>
+    <h1>Información sobre el producto</h1>
+
+    <form action="" method="post" enctype="multipart/form-data" name="Formulario_información_sobre_el_producto">
+        <!--conjunto de campos de datos básicos-->
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <!--Nombre, con control de tipo texto con 
+            50 char de longitud máxima-->
+                <p>
+                <label for="name">Nombre</label><br>
+                <input type="text" id="name" name="nombre" maxlength="50" required>
+                </p>
+            
+            <!--Descripción, un área de texto multilinea-->
+                <p>
+                    <label for="description">Descripción</label><br>
+                    <textarea id="description" name="descripcion" rows="5" cols="50" 
+                    placeholder="Escribe aquí la descripción del producto"></textarea>
+                </p>
+                <!--input para adjuntar foto-->
+                <p>
+                    <label for="photo">Foto</label>
+                    <input type="file" id="photo" name="foto"> 
+                </p>
+            <p>
+                <input type="checkbox" id="counter" name="contador">
+                <label for="counter">Añadir contador de visitas</label>        
+            </p>
+        </fieldset>
+
+        <!--conjunto de campos de datos económicos-->
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <!--Precio-->
+                <p>
+                    <label for="price">Precio</label>
+                    <input type="text" id="price" name="precio" maxlength="4" required>
+                    &euro;&nbsp;  
+                
+                    <label for="taxes">&nbsp;Impuestos</label>             
+                        <select id="taxes" name="impuestos" required>
+                            <option value="">-</option>
+                            <option value="4">4 %</option>
+                            <option value="7">7 %</option>
+                            <option value="16">16 %</option>
+                            <option value="25">25 %</option>
+                        </select>
+                </p>
+            <!--Promoción con tres opciones: Ninguno, Transporte gratuito, o Descuento del 5%-->
+                <p>
+                    Promoción<br>
+                    <input type="radio" name="promocion" value="ninguno" id="none" checked>
+                    <label for="none">Ninguno</label>
+                    <input type="radio" name="promocion" value="gratuito" id="transport">
+                    <label for="transport">Transporte gratuito</label> 
+                    <input type="radio" name="promocion" value="5" id="discount">
+                    <label for="discount">Descuento 5 %</label>   
+                </p>
+        </fieldset>
+                
+        <!--botón para el envío-->
+        <p>
+            <button>Enviar</button>  
+        </p>
+    </form>
+    </main>
+    <hr>
+<footer>
+    © 2026 - DianaUruguay - Ejercicios de HTML
+</footer>
+</body>
+
+</html>
